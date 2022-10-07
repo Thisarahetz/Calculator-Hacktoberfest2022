@@ -1,0 +1,90 @@
+<html>
+    <head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap/main.css">
+    <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="headline">Calculator</div>
+    <div class="row mt-5">
+        <div class="col-md-12 d-flex justify-content-center">
+        <form name="Cal">
+            <div class="row ">
+            <div class="col-md-12 p-0">
+            <div class="form-group">
+                <input class="form-control" type="text" id="result" disabled /> </td>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('1')">1</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('2')">2</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('3')">3</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('4')">4</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('5')">5</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('6')">6</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('7')">7</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('8')">8</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('9')">9</button>	
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('+')">+</button>	
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('0')">0</button>	
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('-')">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('/')">/</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="display('*')">*</button>
+            </div>
+            <div class="col-xs-4">
+            <button type="button" class="btn" onclick="backspace()">⟵</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 p-0">
+            <button type="button" class="btn" onclick="calculate()">=</button>
+            </div>
+            <div class="col-xs-6 p-0">
+            <button type="button" class="btn" onclick="clearScreen()">CE</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
