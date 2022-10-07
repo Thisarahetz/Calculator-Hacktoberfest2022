@@ -1,6 +1,8 @@
-## Calculator 
+## Calculator
 
-<br>![2021-glassmorphism-calculator-ui](https://user-images.githubusercontent.com/73592688/194620666-431adc31-df00-4345-bc26-d1b5baac9f2a.jpg)
+![2021-glassmorphism-calculator-ui](https://user-images.githubusercontent.com/73592688/194620666-431adc31-df00-4345-bc26-d1b5baac9f2a.jpg)
+
+<br>
 
 # Hacktoberfest2022
 
@@ -13,27 +15,28 @@ Contribute between: <h4>1 OCTOBER - 31 OCTOBER</h4>
 
 Create a Pull request and add any feature update to the repository.
 
-* [Click here to register for hacktoberfest2022.](https://hacktoberfest.digitalocean.com/)
+- [Click here to register for hacktoberfest2022.](https://hacktoberfest.digitalocean.com/)
 
-
-### let's discuss how you can contribute in *hacktoberfest 2022* 🙌
+### let's discuss how you can contribute in _hacktoberfest 2022_ 🙌
 
 ### Rules for contribution.
-**1)  Star⭐ and Fork this repository.**
+
+**1) Star⭐ and Fork this repository.**
 
 **2) Modify or find bug and push code.**
 
 **3) Add valid program (or code) on that sub repository.**
 
 **4) Don't forget to add the problem statement , comments and complexity.⚠️⚠️ It's a must part.**
-* Create a branch
+
+- Create a branch
 
 ```markdown
 git clone <link>
 ```
 
-* Make your changes.
-* Commit and push your code.
+- Make your changes.
+- Commit and push your code.
 
 ```markdown
 git add .
