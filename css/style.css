@@ -1,3 +1,30 @@
-.headline {
-  color: red;
+body{
+  background-image: linear-gradient(to right, #B4FF9F, #AF7AB3);
+}
+.headline {   
+  color: #9DDFD3 ;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+}
+.strokeme {
+  color: #00A19D;
+  text-shadow: -1px -1px 0 rgb(72, 159, 181), 1px -1px 0 rgb(153, 89, 158), -1px 3px 0 rgb(107, 66, 136), 1px 1px 0 #000;
+}
+.btn{
+  background-image: linear-gradient(to bottom right, #6A67CE, #A1E3D8 );
+  width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.btn:hover {
+  background-image: linear-gradient(to bottom left, #c6751c, #005555);
+}
+.form-control:disabled, .form-control[readonly] {
+  background-color: #284E78;
+  color: #00A19D;
+  font-weight: bold;
+  opacity: 1;
+}
+.bg-light text-center text-white{
+  height: 0px;
 }
