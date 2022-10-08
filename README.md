@@ -29,11 +29,15 @@ Create a Pull request and add any feature update to the repository.
 
 **4) Don't forget to add the problem statement , comments and complexity.⚠️⚠️ It's a must part.**
 
-- Create a branch
-
 ```markdown
 git clone <link>
 ```
+
+- Create a branch
+```markdown
+git checkout -b "Your_name"
+```
+
 
 - Make your changes.
 - Commit and push your code.
