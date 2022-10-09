@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <h2><div class="headline d-flex justify-content-center strokeme"> Calculator</div> </h2>
-        <h6><div class="headline d-flex justify-content-center" style="color:black;">   Calculator Use : <br>
-            This is a simple basic calculator with memory functions similar to a small handheld calculator. Use this basic calculator online for math with addition, subtraction, division and multiplication.</div> </h6>
-    <div class="row mt-5">
-        <div class="col-md-6 justify-content-center">
+        <div class="container">
+            <div class="row">
+                <h2><div class="headline d-flex justify-content-center strokeme"> Calculator</div> </h2>
+                <h6><div class="headline d-flex justify-content-center" style="color:black;">   Calculator Use : <br>
+                    This is a simple basic calculator with memory functions similar to a small handheld calculator. Use this basic calculator online for math with addition, subtraction, division and multiplication.</div> </h6>
+            </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
         <form name="Cal">
             <div class="row">
                 <div class="col-md-12 p-0">
@@ -21,35 +24,36 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-between">
-                <button type="button" class="btn" onclick="display('1')">1</button>
-                <button type="button" class="btn" onclick="display('2')">2</button>
-                <button type="button" class="btn" onclick="display('3')">3</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4" onclick="display('1')">1</button>
+                <button type="button" class="btn col-4" onclick="display('2')">2</button>
+                <button type="button" class="btn col-4" onclick="display('3')">3</button>
             </div>
-            <div class="row d-flex justify-content-between">
-                <button type="button" class="btn" onclick="display('4')">4</button>
-                <button type="button" class="btn" onclick="display('5')">5</button>
-                <button type="button" class="btn" onclick="display('6')">6</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4" onclick="display('4')">4</button>
+                <button type="button" class="btn col-4" onclick="display('5')">5</button>
+                <button type="button" class="btn col-4" onclick="display('6')">6</button>
             </div>
-            <div class="row d-flex justify-content-between">
-                <button type="button" class="btn" onclick="display('7')">7</button>
-                <button type="button" class="btn" onclick="display('8')">8</button>
-                <button type="button" class="btn" onclick="display('9')">9</button>	
+            <div class="row gap-2">
+                <button type="button" class="btn col-4" onclick="display('7')">7</button>
+                <button type="button" class="btn col-4" onclick="display('8')">8</button>
+                <button type="button" class="btn col-4" onclick="display('9')">9</button>	
             </div>
-            <div class="row d-flex justify-content-between">
-                <button type="button" class="btn" onclick="display('+')">+</button>	
-                <button type="button" class="btn" onclick="display('0')">0</button>	
-                <button type="button" class="btn" onclick="display('-')">-</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4" onclick="display('+')">+</button>	
+                <button type="button" class="btn col-4" onclick="display('0')">0</button>	
+                <button type="button" class="btn col-4" onclick="display('-')">-</button>
             </div>
-            <div class="row d-flex justify-content-between">
-                <button type="button" class="btn" onclick="display('/')">/</button>
-                <button type="button" class="btn" onclick="display('*')">*</button>
-                <button type="button" class="btn" onclick="backspace()">⟵</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4" onclick="display('/')">/</button>
+                <button type="button" class="btn col-4" onclick="display('*')">*</button>
+                <button type="button" class="btn col-4" onclick="backspace()">⟵</button>
             </div>
-            <div class="row d-flex justify-content-between">
-                <button type="button" class="btn" onclick="calculate()">=</button>
-                <button type="button" class="btn" onclick="display('.')">.</button>
-                <button type="button" class="btn" onclick="clearScreen()">CE</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4" onclick="calculate()">=</button>
+                <button type="button" class="btn col-4" onclick="display('.')">.</button>
+                <button type="button" class="btn col-4" onclick="clearScreen()">CE</button>
+                </div>
             </div>
         </form>
     </div>
@@ -76,5 +80,6 @@
   <!-- End of .container -->
 
     <!-- footer end-->
+</div>
 </body>
 </html>
