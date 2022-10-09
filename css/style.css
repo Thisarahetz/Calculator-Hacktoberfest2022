@@ -1,9 +1,13 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   background: #DA4453;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
+
 .headline {
   color: #0b0127;
   font-weight: bold;
@@ -73,10 +77,13 @@ h5 {
 
 .result-area {
   background: #ffffff22;
+  border-radius: .5rem .5rem 0rem 0rem;
+
 }
 
 .button-area {
   background: #ffffff44;
+  border-radius: 0rem 0rem .5rem .5rem;
 }
 
 .calculator {
