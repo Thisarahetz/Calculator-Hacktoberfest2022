@@ -1,5 +1,6 @@
 body {
-  background-image: linear-gradient(to right, #b4ff9f, #af7ab3);
+  /* background-image: linear-gradient(to right, #ffffff, #ffffff); */
+  background-color: #ffff;
 }
 .headline {
   color: #9ddfd3;
@@ -50,4 +51,8 @@ body {
   box-shadow: 0 0 5px 0;
   background: inherit;
   backdrop-filter: blur(10px);
+}
+
+footer {
+  background-image: linear-gradient( #889cf5, #ffffff);
 }
