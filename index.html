@@ -18,44 +18,84 @@
         <div class="card card-body">
         <div class="col-md-6">
         <form name="Cal">
-            <div class="row">
+            <div class="row p-3 result-area">
                 <div class="col-md-12 p-0">
                     <div class="form-group">
-                        <input class="form-control rounded-2 border-0" type="text" id="result" disabled /></td>
+                        <!-- <input type="text" id="result" disabled /> -->
+                        <h5>Result</h5>
+                        <h1 id="result">0</h1>
+                    </td>
                     </div>
                 </div>
             </div>
-            <div class="row gx-5">
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('1')">1</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('2')">2</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('3')">3</button>
+
+            <div class="row p-3 button-area">
+                <table class="calculator">
+                    <tr>
+                        <td class="func-btn" onclick="clearScreen()">C</td>
+                        <td class="func-btn" onclick="display('/')">/</td>
+                        <td class="func-btn" onclick="display('x')">x</td>
+                        <td class="func-btn" onclick="backspace()">Back</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('7')">7</td>
+                        <td class="num-btn" onclick="display('8')">8</td>
+                        <td class="num-btn" onclick="display('9')">9</td>
+                        <td class="func-btn" onclick="display('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('4')">4</td>
+                        <td class="num-btn" onclick="display('5')">5</td>
+                        <td class="num-btn" onclick="display('6')">6</td>
+                        <td class="func-btn" onclick="display('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('1')">1</td>
+                        <td class="num-btn" onclick="display('2')">2</td>
+                        <td class="num-btn" onclick="display('3')">3</td>
+                        <td class="func-btn" rowspan="2" onclick="calculate()">=</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('%')">%</td>
+                        <td class="num-btn" onclick="display('0')">0</td>
+                        <td class="num-btn" onclick="display('.')">.</td>
+                    </tr>
+                </table>
             </div>
-            <div class="row">
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('4')">4</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('5')">5</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('6')">6</button>
+            
+
+<!-- 
+            <div class="row p-0">
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('1')">1</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('2')">2</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('3')">3</button>
             </div>
-            <div class="row">
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('7')">7</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('8')">8</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('9')">9</button>	
+            <div class="row gap-2">
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('4')">4</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('5')">5</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('6')">6</button>
             </div>
-            <div class="row">
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('+')">+</button>	
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('0')">0</button>	
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('-')">-</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('7')">7</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('8')">8</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('9')">9</button>	
             </div>
-            <div class="row">
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('/')">/</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('*')">*</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="backspace()">⟵</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('+')">+</button>	
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('0')">0</button>	
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('-')">-</button>
             </div>
-            <div class="row">
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="calculate()">=</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="display('.')">.</button>
-                <button type="button" class="btn col m-1 border-0 rounded-3" onclick="clearScreen()">CE</button>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('/')">/</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('*')">*</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="backspace()">⟵</button>
+            </div>
+            <div class="row gap-2">
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="calculate()">=</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="display('.')">.</button>
+                <button type="button" class="btn col-4 m-0 border-0 rounded-0" onclick="clearScreen()">CE</button>
                 </div>
-            </div>
+            </div> -->
         </form>
     </div>
     </div>

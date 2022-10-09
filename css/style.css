@@ -1,10 +1,8 @@
 body {
- 
   background: #DA4453;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #89216B, #DA4453);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  
 }
 .headline {
   color: #0b0127;
@@ -19,9 +17,10 @@ body {
 
 #result {
   height: 4rem;
+  color: #fff;
 }
 .rounded-3 {
-  border-radius: .5rem;
+  border-radius: 0rem;
 }
 .btn {
   height: 4rem;
@@ -57,6 +56,57 @@ body {
   backdrop-filter: blur(10px);
 }
 
+
+/* Calculator --------------- */
+h5 {
+  color: #fff;
+}
+
+.result-area {
+  background: #ffffff22;
+}
+
+.button-area {
+  background: #ffffff44;
+}
+
+.calculator {
+  width: 100%;
+}
+
+.calculator tr td {
+  height: 4rem;
+  width: 25%;
+  text-align: center;
+  transition: .1s;
+  font-size: 1.2rem;
+}
+
+.calculator tr .num-btn {
+  background: #ffffff44;
+}
+
+.calculator tr .num-btn:hover {
+  background: #00000055;
+}
+
+.calculator tr .num-btn:active {
+  background: #242424;
+  color: #fff;
+}
+
+.calculator tr .func-btn {
+  background: #ffffff22;
+}
+
+.calculator tr .func-btn:hover {
+  background: #00000033;
+}
+
+.calculator tr .func-btn:active {
+  background: #242424;
+  color: #fff;
+}
 footer {
   background-image: linear-gradient( #889cf5, #ffffff);
  
