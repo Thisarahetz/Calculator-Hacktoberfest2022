@@ -15,6 +15,7 @@ void main()
       "unsigned","continue","for","signed","void","default",
       "switch","case","enum","register","typedef","char"
     };
+    //read the file
     fp=fopen("file.txt","w");
     if(fp==NULL)
     {
