@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(to right, #b4ff9f, #af7ab3);
+  /* background: #0a0a0a; */
 }
 .headline {
   color: #9ddfd3;
@@ -14,6 +15,7 @@ body {
 
 #result {
   height: 4rem;
+  color: #fff;
 }
 .rounded-3 {
   border-radius: 0rem;
@@ -53,6 +55,18 @@ body {
 }
 
 /* Calculator --------------- */
+h5 {
+  color: #fff;
+}
+
+.result-area {
+  background: #ffffff22;
+}
+
+.button-area {
+  background: #ffffff44;
+}
+
 .calculator {
   width: 100%;
 }
@@ -66,7 +80,7 @@ body {
 }
 
 .calculator tr .num-btn {
-  background: #ffffff55;
+  background: #ffffff44;
 }
 
 .calculator tr .num-btn:hover {
@@ -79,7 +93,7 @@ body {
 }
 
 .calculator tr .func-btn {
-  background: #ffffff33;
+  background: #ffffff22;
 }
 
 .calculator tr .func-btn:hover {

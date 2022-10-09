@@ -18,45 +18,51 @@
         <div class="card card-body">
         <div class="col-md-6">
         <form name="Cal">
-            <div class="row">
+            <div class="row p-3 result-area">
                 <div class="col-md-12 p-0">
                     <div class="form-group">
-                        <input class="form-control rounded-0 border-0" type="text" id="result" disabled /></td>
+                        <!-- <input type="text" id="result" disabled /> -->
+                        <h5>Result</h5>
+                        <h1 id="result">0</h1>
+                    </td>
                     </div>
                 </div>
             </div>
 
-            <table class="calculator">
-                <tr>
-                    <td class="func-btn" onclick="clearScreen()">C</td>
-                    <td class="func-btn" onclick="display('/')">/</td>
-                    <td class="func-btn" onclick="display('x')">x</td>
-                    <td class="func-btn" onclick="backspace()">Back</td>
-                </tr>
-                <tr>
-                    <td class="num-btn" onclick="display('7')">7</td>
-                    <td class="num-btn" onclick="display('8')">8</td>
-                    <td class="num-btn" onclick="display('9')">9</td>
-                    <td class="func-btn" onclick="display('-')">-</td>
-                </tr>
-                <tr>
-                    <td class="num-btn" onclick="display('4')">4</td>
-                    <td class="num-btn" onclick="display('5')">5</td>
-                    <td class="num-btn" onclick="display('6')">6</td>
-                    <td class="func-btn" onclick="display('+')">+</td>
-                </tr>
-                <tr>
-                    <td class="num-btn" onclick="display('1')">1</td>
-                    <td class="num-btn" onclick="display('2')">2</td>
-                    <td class="num-btn" onclick="display('3')">3</td>
-                    <td class="func-btn" rowspan="2" onclick="calculate()">=</td>
-                </tr>
-                <tr>
-                    <td class="num-btn" onclick="display('%')">%</td>
-                    <td class="num-btn" onclick="display('0')">0</td>
-                    <td class="num-btn" onclick="display('.')">.</td>
-                </tr>
-            </table>
+            <div class="row p-3 button-area">
+                <table class="calculator">
+                    <tr>
+                        <td class="func-btn" onclick="clearScreen()">C</td>
+                        <td class="func-btn" onclick="display('/')">/</td>
+                        <td class="func-btn" onclick="display('x')">x</td>
+                        <td class="func-btn" onclick="backspace()">Back</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('7')">7</td>
+                        <td class="num-btn" onclick="display('8')">8</td>
+                        <td class="num-btn" onclick="display('9')">9</td>
+                        <td class="func-btn" onclick="display('-')">-</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('4')">4</td>
+                        <td class="num-btn" onclick="display('5')">5</td>
+                        <td class="num-btn" onclick="display('6')">6</td>
+                        <td class="func-btn" onclick="display('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('1')">1</td>
+                        <td class="num-btn" onclick="display('2')">2</td>
+                        <td class="num-btn" onclick="display('3')">3</td>
+                        <td class="func-btn" rowspan="2" onclick="calculate()">=</td>
+                    </tr>
+                    <tr>
+                        <td class="num-btn" onclick="display('%')">%</td>
+                        <td class="num-btn" onclick="display('0')">0</td>
+                        <td class="num-btn" onclick="display('.')">.</td>
+                    </tr>
+                </table>
+            </div>
+            
 
 <!-- 
             <div class="row p-0">
