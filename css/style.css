@@ -12,9 +12,10 @@ body{
 }
 .btn{
   background-image: linear-gradient(to bottom right, #6A67CE, #A1E3D8 );
-  width: 40px;
-    height: 40px;
-    margin: 5px;
+  width: 80px;
+    height: 45px;
+    margin: 5px 10px 5px 0px;
+  
 }
 .btn:hover {
   background-image: linear-gradient(to bottom left, #c6751c, #005555);
@@ -24,6 +25,8 @@ body{
   color: #00A19D;
   font-weight: bold;
   opacity: 1;
+  height:45px;
+  width:263px;
 }
 .bg-light text-center text-white{
   height: 0px;
