@@ -16,7 +16,7 @@ body {
   height: 4rem;
 }
 .rounded-3 {
-  border-radius: .5rem;
+  border-radius: 0rem;
 }
 .btn {
   height: 4rem;
@@ -50,4 +50,43 @@ body {
   box-shadow: 0 0 5px 0;
   background: inherit;
   backdrop-filter: blur(10px);
+}
+
+/* Calculator --------------- */
+.calculator {
+  width: 100%;
+}
+
+.calculator tr td {
+  height: 4rem;
+  width: 25%;
+  text-align: center;
+  transition: .1s;
+  font-size: 1.2rem;
+}
+
+.calculator tr .num-btn {
+  background: #ffffff55;
+}
+
+.calculator tr .num-btn:hover {
+  background: #00000055;
+}
+
+.calculator tr .num-btn:active {
+  background: #242424;
+  color: #fff;
+}
+
+.calculator tr .func-btn {
+  background: #ffffff33;
+}
+
+.calculator tr .func-btn:hover {
+  background: #00000033;
+}
+
+.calculator tr .func-btn:active {
+  background: #242424;
+  color: #fff;
 }
