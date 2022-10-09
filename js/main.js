@@ -14,6 +14,7 @@ function calculate() {
     var q = eval(p);
     document.getElementById("result").value = q;
 }
+
 // This function remove backspace
 function backspace() {
     var back_space = document.getElementById('result');
