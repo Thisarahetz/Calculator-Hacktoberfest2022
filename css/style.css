@@ -11,11 +11,26 @@ body {
   text-shadow: -1px -1px 0 rgb(72, 159, 181), 1px -1px 0 rgb(153, 89, 158),
     -1px 3px 0 rgb(107, 66, 136), 1px 1px 0 #000;
 }
+
+#result {
+  height: 4rem;
+}
+.rounded-3 {
+  border-radius: .5rem;
+}
 .btn {
-  background-image: linear-gradient(to bottom right, #6a67ce, #a1e3d8);
-  width: 40px;
-  height: 40px;
-  margin: 5px;
+  height: 4rem;
+  background: #da4453; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #89216b,
+    #da4453
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .btn:hover {
   background-image: linear-gradient(to bottom left, #c6751c, #005555);
