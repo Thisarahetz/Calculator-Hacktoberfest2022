@@ -48,6 +48,6 @@ git commit -m 'Commit message'
 git push origin branch-name
 ```
 
-**5) Commit the change and generate a valid pull request.**
+**5) Commit the change and generate a valid pull request.(compare & pull request)** 
 
 **6) After carefully reviewing your code , if it is valid then it will be merged otherwise discarded.**
