@@ -11,25 +11,32 @@
   <link rel="stylesheet" href="styles/dark.css" id="theme" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="container">
+    <div class="container shadow p-3 bg-body rounded drop-shadow">
       <div class="header-container">
+        
         <!-- This heading also notifies about the theme change.-->
         <h1 id="toast">Calculator</h1>
         <div class="top-buttons">
+          <a href="https://github.com/zxcodes/JavaScript-Calculator">
+            <img src="assets/GitHubLight.svg" alt="Sun Icon" height="22.5" width="22.5" id="github-icon">
+          </a>
           <button type="button" onclick="changeTheme()" class="theme-button">
             <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
           </button>
         </div>
       </div>
       <div class="first-row">
-        <input type="text" name="result" id="result" placeholder="Result" readonly />
-        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+         <input type="text" name="result" id="result" placeholder="Result " style="color: white;" readonly />
+        <input type="button" value="C" onclick="result.value=''" id="clear-button" /> 
       </div>
+       
       <div class="second-row">
         <input type="button" value="1" onclick="liveScreen(1)" />
         <input type="button" value="2" onclick="liveScreen(2)" />
@@ -37,15 +44,15 @@
         <input type="button" value="+" onclick="liveScreen('+')" />
       </div>
       <div class="third-row">
-        <input type="button" value="4" onclick="liveScreen(4)" />
-        <input type="button" value="5" onclick="liveScreen(5)" />
-        <input type="button" value="6" onclick="liveScreen(6)" />
+        <input type="button" value="4" onclick=" liveScreen(4)" />
+        <input type="button" value="5" onclick=" liveScreen(5)" />
+        <input type="button" value="6" onclick=" liveScreen(6)" />
         <input type="button" value="-" onclick="liveScreen('-')" />
       </div>
       <div class="fourth-row">
         <input type="button" value="7" onclick="liveScreen(7)" />
         <input type="button" value="8" onclick="liveScreen(8)" />
-        <input type="button" value="9" onclick="liveScreen(9)" />
+        <input type="button" value="9" onclick=" liveScreen(9)" />
         <input type="button" value="x" onclick="liveScreen('*')" />
       </div>
       <div class="fifth-row">
