@@ -10,7 +10,11 @@
 ::placeholder {
   color: rgb(221, 221, 221);
 }
-
+.drop-shadow {
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 2px rgba(250, 249, 229, 0.927);
+  border-radius:5px;
+}
 .wrapper {
   height: 100vh;
   width: 100%;
@@ -18,7 +22,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(20, 19, 19);
+  background-color: #0d0d0e;
   transition: 0.8s all;
 }
 
@@ -28,22 +32,24 @@ h1 {
   font-weight: normal;
 }
 
+
 .container {
   width: 350px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #0d0d0e;
+  padding: 18px 0 18px 0;
+  border: 1px solid #858585;
+  border-radius: 8%;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  padding: 20px 0px;
+  width: 88%;
 }
 
 .top-buttons {
@@ -63,6 +69,11 @@ input {
   outline: none;
   border-radius: 100px;
   margin: 0.2em;
+  
+}
+#toast{
+  font-family: 'Handlee', cursive;
+  font-weight: 600;
 }
 
 .first-row,
@@ -71,6 +82,14 @@ input {
 .fourth-row,
 .fifth-row {
   margin-bottom: 4px;
+  /* padding: 4px; */
+}
+.second-row{
+  padding: 4px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 input[type="text"] {
@@ -79,18 +98,31 @@ input[type="text"] {
 }
 
 input[type="button"]:hover {
-  background-color: rgb(101, 101, 101);
+  background-color: rgb(31, 30, 30);
   color: #fff;
 }
+.first-row{
+ background: #ffffff33;
+ border-radius: 10px;
+ box-shadow: 0 4px 30px #0000001a;
+ backdrop-filter: blur(5px);
+ -webkit-backdrop-filter: blur(5px);
+ padding: 0 4px 4px 4px;
+ margin-top: 0;
+ border: 0px;
+ 
+}
+
 
 #clear-button {
   color: #fff;
   background-color: rgb(255, 42, 42);
 }
-
-a {
-  text-decoration: none;
-  color: #fff;
+#result{
+  background-color: #0d0d0e;
+  border-radius: 10px;
+  font-family: 'Handlee', cursive;
+  font-weight: 800;  
 }
 
 #github-icon {
