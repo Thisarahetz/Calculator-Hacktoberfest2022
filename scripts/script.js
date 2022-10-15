@@ -18,6 +18,14 @@ function calculate(value) {
   }
 }
 
+function sq_rt() {
+  res.value = Math.sqrt(res.value);
+}
+
+function backspc() {
+  res.value = res.value.substring(0, res.value.length - 1);
+}
+
 // Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
   const theme = document.getElementById("theme");

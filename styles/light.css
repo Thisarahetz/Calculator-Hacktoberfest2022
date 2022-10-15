@@ -78,7 +78,8 @@ input {
 .second-row,
 .third-row,
 .fourth-row,
-.fifth-row {
+.fifth-row,
+.sixth-row {
   margin-bottom: 9px;
 }
 
@@ -88,7 +89,7 @@ input[type="button"] {
 
 input[type="text"] {
   background-color: rgb(255, 255, 255);
-  width: 222.5px;
+  width: 309px;
 }
 
 input[type="button"]:hover {
