@@ -26,12 +26,22 @@ input.forEach((e) => {
     let val = e.target.value;
     let id = e.target.id;
     console.log(id, val);
-    if (id !== "calc" && id !== "clear-button" && id !== "result")
+    if (
+      id !== "calc" &&
+      id !== "clear-button" &&
+      id !== "result" &&
+      id !== "del-button"
+    )
       liveScreen(val);
     else if (id === "calc") {
       calculate(res.value);
     } else if (id === "clear-button") res.value = "";
     else if (id === "theme-btn") changeTheme();
+    else if (id === "del-button") {
+      const resultInput = res.value;
+      //remove the last element in the string
+      res.value = resultInput.substring(0, res.value.length - 1);
+    }
   });
 });
 

@@ -25,31 +25,38 @@ h1 {
 }
 
 .container {
-  width: 350px;
+  width: 400px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: #20B2AA;
+  padding: 18px;
+  box-shadow: 10px 5px 5px teal;
+  border-radius: 8% 8%;
+  
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  padding: 20px 0px;
+  width: 90%;
+  padding: 0;
 }
 
 .top-buttons {
   display: flex;
   align-items: center;
 }
+#toast{
+  font-family: 'Handlee', cursive;
+  font-weight: 600;
+}
 
 input {
   padding: 25px;
-  color: rgb(87, 87, 87);
+  color: #fff;
   font-size: 1em;
   cursor: pointer;
   width: 70px;
@@ -59,13 +66,21 @@ input {
   border-radius: 100px;
   margin: 0.2em;
 }
-
+::placeholder{
+  color: #fff;
+}
+#result{
+  background-color: #2F4F4F;
+  font-family: 'Handlee', cursive;
+  color: #fff;
+}
 .first-row,
 .second-row,
 .third-row,
 .fourth-row,
-.fifth-row {
-  margin-bottom: 4px;
+.fifth-row,
+.sixth-row {
+  margin-bottom: 9px;
 }
 
 input[type="button"] {
@@ -74,7 +89,7 @@ input[type="button"] {
 
 input[type="text"] {
   background-color: rgb(255, 255, 255);
-  width: 222.5px;
+  width: 309px;
 }
 
 input[type="button"]:hover {

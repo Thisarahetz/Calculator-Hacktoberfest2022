@@ -11,23 +11,30 @@
   <link rel="stylesheet" href="styles/dark.css" id="theme" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="container">
+    <div class="container shadow p-3 bg-body rounded drop-shadow">
       <div class="header-container">
+
         <!-- This heading also notifies about the theme change.-->
         <h1 id="toast">Calculator</h1>
         <div class="top-buttons">
-          <button type="button" class="theme-button" id="theme-btn">
-            <img src="assets/SunIcon.svg" alt="Theme Icon" id="theme-icon">
+          <a href="https://github.com/zxcodes/JavaScript-Calculator">
+            <img src="assets/GitHubLight.svg" alt="Sun Icon" height="22.5" width="22.5" id="github-icon">
+          </a>
+          <button type="button" onclick="changeTheme()" class="theme-button">
+            <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
           </button>
         </div>
       </div>
       <div class="first-row">
         <input type="text" name="result" id="result" value="" placeholder="Result" readonly />
+        <input type="button" value="Del" id="del-button" />
         <input type="button" value="C" onclick="result.value=''" id="clear-button" />
       </div>
       <div class="second-row">
@@ -45,7 +52,7 @@
         <input type="button" value="-" />
       </div>
       <div class="fourth-row">
-        <input type="button" value="*" />
+        <input type="button" value="^" />
         <input type="button" value="7" />
         <input type="button" value="8" />
         <input type="button" value="9" />

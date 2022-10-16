@@ -3,6 +3,7 @@ const operandsRequired = {
   "*":2,
   "-":2,
   "+":2,
+  "^":2,
   "√":1,
 };
 const operators = ["+", "-", "*", "/", "^", "(", ")","√"];
@@ -89,6 +90,7 @@ function evaluatePostfix(postfix) {
     //  If the scanned element is an operator, pop two elements from stack apply the operator
     else {
       let val1=null,val2=null;
+      console.log(operandsRequired[e]);
       if(operandsRequired[e]==2){
         val1 = st.pop();
         val2 = st.pop();
