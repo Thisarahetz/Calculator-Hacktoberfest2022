@@ -29,7 +29,8 @@ h1 {
 }
 
 .container {
-  width: 350px;
+  /* width: 350px; */
+  padding: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -49,7 +50,7 @@ h1 {
 .top-buttons {
   display: flex;
   align-items: center;
-
+  /* padding: 3px; */
 }
 
 input {
@@ -100,4 +101,5 @@ a {
 .theme-button {
   all: unset;
   cursor: pointer;
+  padding: 10px;
 }

@@ -21,43 +21,48 @@
         <!-- This heading also notifies about the theme change.-->
         <h1 id="toast">Calculator</h1>
         <div class="top-buttons">
-          <button type="button" onclick="changeTheme()" class="theme-button">
-            <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
+          <button type="button" class="theme-button" id="theme-btn">
+            <img src="assets/SunIcon.svg" alt="Theme Icon" id="theme-icon">
           </button>
         </div>
       </div>
       <div class="first-row">
-        <input type="text" name="result" id="result" placeholder="Result" readonly />
+        <input type="text" name="result" id="result" value="" placeholder="Result" readonly />
         <input type="button" value="C" onclick="result.value=''" id="clear-button" />
       </div>
       <div class="second-row">
-        <input type="button" value="1" onclick="liveScreen(1)" />
-        <input type="button" value="2" onclick="liveScreen(2)" />
-        <input type="button" value="3" onclick="liveScreen(3)" />
-        <input type="button" value="+" onclick="liveScreen('+')" />
+        <input type="button" value="(" />
+        <input type="button" value="1" />
+        <input type="button" value="2" />
+        <input type="button" value="3" />
+        <input type="button" value="+" />
       </div>
       <div class="third-row">
-        <input type="button" value="4" onclick="liveScreen(4)" />
-        <input type="button" value="5" onclick="liveScreen(5)" />
-        <input type="button" value="6" onclick="liveScreen(6)" />
-        <input type="button" value="-" onclick="liveScreen('-')" />
+        <input type="button" value=")" />
+        <input type="button" value="4" />
+        <input type="button" value="5" />
+        <input type="button" value="6" />
+        <input type="button" value="-" />
       </div>
       <div class="fourth-row">
-        <input type="button" value="7" onclick="liveScreen(7)" />
-        <input type="button" value="8" onclick="liveScreen(8)" />
-        <input type="button" value="9" onclick="liveScreen(9)" />
-        <input type="button" value="x" onclick="liveScreen('*')" />
+        <input type="button" value="*" />
+        <input type="button" value="7" />
+        <input type="button" value="8" />
+        <input type="button" value="9" />
+        <input type="button" value="*" />
+        <!-- <input type="button" value="√" /> -->
       </div>
       <div class="fifth-row">
-        <input type="button" value="/" onclick="liveScreen('/')" />
-        <input type="button" value="0" onclick="liveScreen(0)" />
-        <input type="button" value="." onclick="liveScreen('.')" />
-        <input type="button" value="=" onclick="calculate(result.value)" />
+        <input type="button" value="√" />
+        <input type="button" value="/" />
+        <input type="button" value="0" />
+        <input type="button" value="." />
+        <input type="button" id="calc" value="=" />
       </div>
     </div>
   </div>
-  <script src="scripts/script.js">
-  </script>
+  <script type="module" src="./scripts/script.js"></script>
+  <script type="module" src="./scripts/calculate.js"></script>
 </body>
 
 </html>
