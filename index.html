@@ -34,28 +34,32 @@
       </div>
       <div class="first-row">
          <input type="text" name="result" id="result" placeholder="Result " style="color: white;" readonly />
-        <input type="button" value="C" onclick="result.value=''" id="clear-button" /> 
       </div>
-       
       <div class="second-row">
+        <input type="button" value="C" onclick="result.value=''" id="clear-button" /> 
+        <input type="button" value="^" onclick="liveScreen('**')" />
+        <input type="button" value="&radic;" onclick="sq_rt()" />
+        <input type="button" value="Del" onclick="backspc()" />
+      </div>
+      <div class="third-row">
         <input type="button" value="1" onclick="liveScreen(1)" />
         <input type="button" value="2" onclick="liveScreen(2)" />
         <input type="button" value="3" onclick="liveScreen(3)" />
         <input type="button" value="+" onclick="liveScreen('+')" />
       </div>
-      <div class="third-row">
+      <div class="fourth-row">
         <input type="button" value="4" onclick=" liveScreen(4)" />
         <input type="button" value="5" onclick=" liveScreen(5)" />
         <input type="button" value="6" onclick=" liveScreen(6)" />
         <input type="button" value="-" onclick="liveScreen('-')" />
       </div>
-      <div class="fourth-row">
+      <div class="fifth-row">
         <input type="button" value="7" onclick="liveScreen(7)" />
         <input type="button" value="8" onclick="liveScreen(8)" />
         <input type="button" value="9" onclick=" liveScreen(9)" />
         <input type="button" value="x" onclick="liveScreen('*')" />
       </div>
-      <div class="fifth-row">
+      <div class="sixth-row">
         <input type="button" value="/" onclick="liveScreen('/')" />
         <input type="button" value="0" onclick="liveScreen(0)" />
         <input type="button" value="." onclick="liveScreen('.')" />

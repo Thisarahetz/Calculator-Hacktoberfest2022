@@ -80,13 +80,11 @@ input {
 .second-row,
 .third-row,
 .fourth-row,
-.fifth-row {
+.fifth-row,
+.sixth-row {
   margin-bottom: 4px;
-  /* padding: 4px; */
 }
-.second-row{
-  padding: 4px;
-}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -94,7 +92,7 @@ a {
 
 input[type="text"] {
   background-color: rgb(47, 51, 50);
-  width: 222.5px;
+  width: 306px;
 }
 
 input[type="button"]:hover {
