@@ -25,7 +25,7 @@ h1 {
 }
 
 .container {
-  width: 400px;
+  /* width: 400px; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -34,7 +34,7 @@ h1 {
   padding: 18px;
   box-shadow: 10px 5px 5px teal;
   border-radius: 8% 8%;
-  
+
 }
 
 .header-container {
