@@ -35,7 +35,6 @@ input.forEach((e) => {
     else if (id === "calc") {
       calculate(res.value);
     } else if (id === "clear-button") res.value = "";
-    else if (id === "theme-btn") changeTheme();
     else if (id === "del-button") {
       const resultInput = res.value;
       //remove the last element in the string
@@ -44,6 +43,9 @@ input.forEach((e) => {
   });
 });
 
+document.querySelector(".theme-button").addEventListener('click',()=>{
+  changeTheme();
+})
 // Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
   const theme = document.getElementById("theme");
