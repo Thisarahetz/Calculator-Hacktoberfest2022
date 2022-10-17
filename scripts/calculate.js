@@ -46,7 +46,6 @@ function infixToPostfix(s) {
   }
   if(curr_num!="")
     infix.push(curr_num);
-  console.log('infix', infix)
   //creating an operator stack
   let st = [];
   let postfix = [];
@@ -90,7 +89,6 @@ function evaluatePostfix(postfix) {
     //  If the scanned element is an operator, pop two elements from stack apply the operator
     else {
       let val1=null,val2=null;
-      console.log(operandsRequired[e]);
       if(operandsRequired[e]==2){
         val1 = st.pop();
         val2 = st.pop();
@@ -98,8 +96,6 @@ function evaluatePostfix(postfix) {
       else{
         val1 = st.pop();
       }
-      console.log('val1', val1)
-      console.log('val2', val2)
       switch (e) {
         case "+":
           st.push(val2 + val1);
@@ -128,6 +124,5 @@ function evaluatePostfix(postfix) {
 const res = document.getElementById("result");
 export function scientific(exp) {
   let postFix = infixToPostfix(exp);
-  console.log(postFix);
   return evaluatePostfix(postFix);
 }
