@@ -1,4 +1,5 @@
 /* CSS Reset & Global Styles */
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -34,7 +35,8 @@ h1 {
 
 
 .container {
-  width: 350px;
+  /* width: 350px; */
+  padding: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -55,7 +57,7 @@ h1 {
 .top-buttons {
   display: flex;
   align-items: center;
-
+  /* padding: 3px; */
 }
 
 input {
@@ -69,7 +71,7 @@ input {
   outline: none;
   border-radius: 100px;
   margin: 0.2em;
-  
+
 }
 #toast{
   font-family: 'Handlee', cursive;
@@ -108,7 +110,7 @@ input[type="button"]:hover {
  padding: 0 4px 4px 4px;
  margin-top: 0;
  border: 0px;
- 
+
 }
 
 
@@ -120,7 +122,8 @@ input[type="button"]:hover {
   background-color: #0d0d0e;
   border-radius: 10px;
   font-family: 'Handlee', cursive;
-  font-weight: 800;  
+  font-weight: 800;
+  width: fit-content;
 }
 
 #github-icon {

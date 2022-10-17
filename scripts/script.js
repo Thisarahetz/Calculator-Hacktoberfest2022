@@ -1,3 +1,4 @@
+import { scientific } from "./calculate.js";
 const lightTheme = "styles/light.css";
 const darkTheme = "styles/dark.css";
 const sunIcon = "assets/SunIcon.svg";
@@ -7,9 +8,10 @@ const res = document.getElementById("result");
 const toast = document.getElementById("toast");
 
 function calculate(value) {
-  const calculatedValue = eval(value || null);
+  let calculatedValue = NaN;
+  if (value != "") calculatedValue = scientific(value);
   if (isNaN(calculatedValue)) {
-    res.value = "Can't divide 0 with 0";
+    if (value !== "") res.value = "Invalid Expression";
     setTimeout(() => {
       res.value = "";
     }, 1300);
@@ -18,14 +20,33 @@ function calculate(value) {
   }
 }
 
-function sq_rt() {
-  res.value = Math.sqrt(res.value);
-}
+let input = document.querySelectorAll("input");
+input.forEach((e) => {
+  e.addEventListener("click", (e) => {
+    let val = e.target.value;
+    let id = e.target.id;
+    console.log(id, val);
+    if (
+      id !== "calc" &&
+      id !== "clear-button" &&
+      id !== "result" &&
+      id !== "del-button"
+    )
+      liveScreen(val);
+    else if (id === "calc") {
+      calculate(res.value);
+    } else if (id === "clear-button") res.value = "";
+    else if (id === "del-button") {
+      const resultInput = res.value;
+      //remove the last element in the string
+      res.value = resultInput.substring(0, res.value.length - 1);
+    }
+  });
+});
 
-function backspc() {
-  res.value = res.value.substring(0, res.value.length - 1);
-}
-
+document.querySelector(".theme-button").addEventListener('click',()=>{
+  changeTheme();
+})
 // Swaps the stylesheet to achieve dark mode.
 function changeTheme() {
   const theme = document.getElementById("theme");
