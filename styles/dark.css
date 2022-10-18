@@ -36,6 +36,7 @@ h1 {
 
 .container {
   /* width: 350px; */
+  margin: 10px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -86,7 +87,9 @@ input {
 .sixth-row {
   margin-bottom: 4px;
 }
-
+.first-row{
+  margin: 10px;
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -119,6 +122,7 @@ input[type="button"]:hover {
   background-color: rgb(255, 42, 42);
 }
 #result{
+  margin: 10px;
   background-color: #0d0d0e;
   border-radius: 10px;
   font-family: 'Handlee', cursive;
