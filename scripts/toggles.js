@@ -1,3 +1,5 @@
+// toggle.js features all the toggleable functions of the calculator
+// currently it has dark/light mode toggle and scientific-functions switch
 const lightTheme = "styles/light.css";
 const darkTheme = "styles/dark.css";
 const sunIcon = "assets/SunIcon.svg";

@@ -115,3 +115,11 @@ a {
   all: unset;
   cursor: pointer;
 }
+
+.toggle-scientific{
+  all: unset;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #fff;
+}
