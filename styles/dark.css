@@ -138,3 +138,8 @@ input[type="button"]:hover {
   all: unset;
   cursor: pointer;
 }
+.foot{
+  text-align: center;
+  color:#fff;
+  background-color: #0d0d0e;
+}
