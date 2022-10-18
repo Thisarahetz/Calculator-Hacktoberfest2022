@@ -67,6 +67,17 @@
         <input type="button" id="calc" value="=" />
       </div>
     </div>
+    <div class="date-time-div">
+      <p>Current Date is <span id="date"></span>.</p>
+      <p>Current Date and Time is <span id="time"></span>.</p>
+    </div>
+  </div>
+
+  <script>
+    var dt = new Date();
+    document.getElementById("date").innerHTML = dt.toLocaleDateString();
+    document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+  </script>
   </div>
   <script type="module" src="./scripts/script.js"></script>
   <script type="module" src="./scripts/calculate.js"></script>

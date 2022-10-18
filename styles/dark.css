@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans";
   -webkit-appearance: none;
 }
 
@@ -12,9 +12,9 @@
   color: rgb(221, 221, 221);
 }
 .drop-shadow {
-  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px 2px rgba(250, 249, 229, 0.927);
-  border-radius:5px;
+  border-radius: 5px;
 }
 .wrapper {
   height: 100vh;
@@ -32,7 +32,6 @@ h1 {
   color: #fff;
   font-weight: normal;
 }
-
 
 .container {
   /* width: 350px; */
@@ -72,10 +71,9 @@ input {
   outline: none;
   border-radius: 100px;
   margin: 0.2em;
-
 }
-#toast{
-  font-family: 'Handlee', cursive;
+#toast {
+  font-family: "Handlee", cursive;
   font-weight: 600;
 }
 
@@ -87,7 +85,7 @@ input {
 .sixth-row {
   margin-bottom: 4px;
 }
-.first-row{
+.first-row {
   margin: 10px;
 }
 a {
@@ -104,28 +102,26 @@ input[type="button"]:hover {
   background-color: rgb(31, 30, 30);
   color: #fff;
 }
-.first-row{
- background: #ffffff33;
- border-radius: 10px;
- box-shadow: 0 4px 30px #0000001a;
- backdrop-filter: blur(5px);
- -webkit-backdrop-filter: blur(5px);
- padding: 0 4px 4px 4px;
- margin-top: 0;
- border: 0px;
-
+.first-row {
+  background: #ffffff33;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px #0000001a;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 0 4px 4px 4px;
+  margin-top: 0;
+  border: 0px;
 }
-
 
 #clear-button {
   color: #fff;
   background-color: rgb(255, 42, 42);
 }
-#result{
+#result {
   margin: 10px;
   background-color: #0d0d0e;
   border-radius: 10px;
-  font-family: 'Handlee', cursive;
+  font-family: "Handlee", cursive;
   font-weight: 800;
   width: fit-content;
 }
@@ -137,4 +133,14 @@ input[type="button"]:hover {
 .theme-button {
   all: unset;
   cursor: pointer;
+}
+
+.date-time-div {
+  padding: 1.6rem 3.2rem;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #9c36b5;
+  border: 11px;
+  color: #fff;
+  border-radius: 11px;
 }
