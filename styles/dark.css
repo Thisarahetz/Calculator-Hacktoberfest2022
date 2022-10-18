@@ -138,3 +138,11 @@ input[type="button"]:hover {
   all: unset;
   cursor: pointer;
 }
+.cp-text
+{ 
+  color: grey; 
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
+body{
+  background: black;
+}
