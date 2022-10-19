@@ -12,8 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,46 +30,44 @@
           <button type="button" class="theme-button">
             <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
           </button>
+          <button name="off" class="toggle-scientific"><span>S</span></button>
         </div>
       </div>
       <div class="first-row">
-        <input type="text" name="result" id="result" value="" placeholder="Result" readonly />
+        <input type="text" name="result" id="result" value="" placeholder="Result" />
         <input type="button" value="Del" id="del-button" />
         <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+
       </div>
       <div class="second-row">
-        <input type="button" value="(" />
-        <input type="button" value="1" />
-        <input type="button" value="2" />
-        <input type="button" value="3" />
-        <input type="button" value="+" />
+        <input type="button" id="btn-1" value="1" />
+        <input type="button" id="btn-2" value="2" />
+        <input type="button" id="btn-3" value="3" />
+        <input type="button" id="btn-add" value="+" />
       </div>
       <div class="third-row">
-        <input type="button" value=")" />
-        <input type="button" value="4" />
-        <input type="button" value="5" />
-        <input type="button" value="6" />
-        <input type="button" value="-" />
+        <input type="button" id="btn-4" value="4" />
+        <input type="button" id="btn-5" value="5" />
+        <input type="button" id="btn-6" value="6" />
+        <input type="button" id="btn-sub" value="-" />
       </div>
       <div class="fourth-row">
-        <input type="button" value="^" />
-        <input type="button" value="7" />
-        <input type="button" value="8" />
-        <input type="button" value="9" />
-        <input type="button" value="*" />
-        <!-- <input type="button" value="√" /> -->
+        <input type="button" id="btn-7" value="7" />
+        <input type="button" id="btn-8" value="8" />
+        <input type="button" id="btn-9" value="9" />
+        <input type="button" id="btn-mult" value="*" />
       </div>
       <div class="fifth-row">
-        <input type="button" value="√" />
-        <input type="button" value="/" />
-        <input type="button" value="0" />
-        <input type="button" value="." />
+        <input type="button" id="btn-div" value="/" />
+        <input type="button" id="btn-0" value="0" />
+        <input type="button" id="btn-dot" value="." />
         <input type="button" id="calc" value="=" />
       </div>
     </div>
   </div>
   <script type="module" src="./scripts/script.js"></script>
   <script type="module" src="./scripts/calculate.js"></script>
+  <script type="module" src="./scripts/toggles.js"></script>
 </body>
 
 </html>
