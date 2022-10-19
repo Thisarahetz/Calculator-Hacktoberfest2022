@@ -135,6 +135,13 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 
+.foot{
+  text-align: center;
+  color:#fff;
+  background-color: #0d0d0e;
+}
+
+
 .cp-text
 { 
   color: grey; 
