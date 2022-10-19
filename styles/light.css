@@ -115,6 +115,7 @@ a {
   cursor: pointer;
 }
 
+
 .date-time-div {
   padding: 1.6rem 3.2rem;
   text-align: center;
@@ -122,4 +123,12 @@ a {
   background-color: #96f2d7;
   border: 11px;
   border-radius: 11px;
+}
+
+.toggle-scientific{
+  all: unset;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #fff;
 }

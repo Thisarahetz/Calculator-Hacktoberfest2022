@@ -135,6 +135,7 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 
+
 .date-time-div {
   padding: 1.6rem 3.2rem;
   text-align: center;
@@ -144,3 +145,12 @@ input[type="button"]:hover {
   color: #fff;
   border-radius: 11px;
 }
+
+.toggle-scientific{
+  all: unset;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #fff;
+}
+

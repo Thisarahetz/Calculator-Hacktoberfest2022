@@ -1,3 +1,4 @@
+//calculate.js features the algorithm to calculate the input expressions
 const operandsRequired = {
   "/":2,
   "*":2,
