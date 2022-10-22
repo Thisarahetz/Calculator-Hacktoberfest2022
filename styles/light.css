@@ -133,6 +133,8 @@ body{
   background-color: #96f2d7;
   border: 11px;
   border-radius: 11px;
+  width: 300px ;
+  border: 2px dotted  black ;
 }
 
 .toggle-scientific{
@@ -141,4 +143,8 @@ body{
   padding-left: 10px;
   padding-bottom: 5px;
   color: #fff;
+}
+
+#lastpara{
+  margin-top: -10px ;
 }
