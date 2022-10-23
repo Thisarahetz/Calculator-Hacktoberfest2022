@@ -14,13 +14,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(7, 210, 199);
+  background-color: #FDFDBD;
   transition: 0.8s all;
 }
 
 h1 {
   margin-bottom: 1.5%;
-  color: #fff;
+  color: rgb(9, 6, 27);
   font-weight: normal;
 }
 
@@ -30,9 +30,9 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #20b2aa;
+  background-color: #C8FFD4;
   padding: 18px;
-  box-shadow: 10px 5px 5px teal;
+  box-shadow: 10px 5px 5px rgba(9, 6, 27, 0.666);
   border-radius: 8% 8%;
 }
 
@@ -47,7 +47,13 @@ h1 {
 .top-buttons {
   display: flex;
   align-items: center;
+  background-color: #636385;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  border-radius: 15px;
 }
+
 #toast {
   font-family: "Handlee", cursive;
   font-weight: 600;
@@ -59,19 +65,23 @@ input {
   font-size: 1em;
   cursor: pointer;
   width: 70px;
-  background-color: #fff;
+  background-color: #B1AFFF;
   border: none;
   outline: none;
   border-radius: 100px;
   margin: 0.2em;
+  font-weight: bold;
 }
 ::placeholder {
-  color: #fff;
+  color: rgb(2, 1, 1);
+  font-weight: bold;
 }
+
 #result {
-  background-color: #2f4f4f;
+  background-color: #B1AFFF;
   font-family: "Handlee", cursive;
-  color: #fff;
+  color: rgb(2, 1, 1);
+  font-weight: bold;
 }
 .first-row,
 .second-row,
@@ -98,7 +108,12 @@ input[type="button"]:hover {
 
 #clear-button {
   color: #fff;
-  background-color: rgb(255, 25, 25);
+  background-color: rgb(231, 32, 32);
+}
+
+#clear-button:hover {
+  color: #fff;
+  background-color: rgba(255, 25, 25, 0.544);
 }
 
 a {
@@ -120,8 +135,9 @@ a {
   color: lightgray; 
   text-shadow: 0 1px rgba(255, 255, 255, 0.1);
 }
+
 body{
-  background: rgb(7, 210, 199);
+  background:  #FDFDBD;
 }
 
 
