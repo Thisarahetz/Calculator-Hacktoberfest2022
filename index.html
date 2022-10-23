@@ -72,28 +72,29 @@
       </div>
     </div>
     <div class="date-time-div">
-      <p>Current Date is <span id="date"></span>.</p>
-      <p>Current Date and Time is <span id="time"></span>.</p>
+      <p>Date : <span id="date"></span></p><br>
+      <p>Time : <span id="time"></span></p>
     </div>
   </div>
 
+
+  </div>
   <script>
     var dt = new Date();
     document.getElementById("date").innerHTML = dt.toLocaleDateString();
     document.getElementById("time").innerHTML = dt.toLocaleTimeString();
   </script>
-  </div>
   <script type="module" src="./scripts/script.js"></script>
   <script type="module" src="./scripts/calculate.js"></script>
   <script type="module" src="./scripts/toggles.js"></script>
 </body>
 
 <footer class="foot">
-  <p>Copyright &copy; 2022</p>
+  <p id = "lastpara">Copyright &copy; 2022. All Rights Reserved.</p><br>
   <div>
-    <p><ion-icon name="logo-instagram"></ion-icon>
-    <ion-icon name="logo-twitter"></ion-icon>
-    <ion-icon name="logo-github"></ion-icon></p>
+    <p><ion-icon name="logo-instagram" style="cursor: pointer;"></ion-icon>
+    <ion-icon name="logo-twitter" style="cursor: pointer;"></ion-icon>
+    <ion-icon name="logo-github" style="cursor: pointer;"></ion-icon></p>
   </div>
 </footer>
 
@@ -101,7 +102,7 @@
 
 <body style="text-align: center; padding:5%;">
   <p class="cp-text">
-      © Copyright 2022  Hackthoberfest2022. All rights reserved.
+      ...
   </p>
 
 
