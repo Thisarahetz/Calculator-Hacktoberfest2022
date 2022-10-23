@@ -70,8 +70,10 @@ input {
 }
 #result {
   background-color: #2f4f4f;
+  border-radius: 10px;
   font-family: "Handlee", cursive;
   color: #fff;
+  width: fit-content;
 }
 .first-row,
 .second-row,
