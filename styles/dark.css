@@ -131,7 +131,6 @@ input[type="button"]:hover {
   border-radius: 10px;
   font-family: "Handlee", cursive;
   font-weight: 800;
-  width: fit-content;
 }
 
 #github-icon {
@@ -178,5 +177,24 @@ body {
   cursor: pointer;
   padding-left: 10px;
   padding-bottom: 5px;
+  color: #fff;
+}
+
+#scientific-button{
+  color: #fff;
+  background-color: #2F3332;
+  margin: 3.2px;
+  padding: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  width: 20px;
+  border: none;
+  outline: none;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+#scientific-button:hover{
+  background-color: rgb(31, 30, 30);
   color: #fff;
 }
