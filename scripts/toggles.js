@@ -2,9 +2,14 @@
 // currently it has dark/light mode toggle and scientific-functions switch
 const lightTheme = "styles/light.css";
 const darkTheme = "styles/dark.css";
+const anotherTheme = "styles/theme.css";
+
 const sunIcon = "assets/SunIcon.svg";
 const moonIcon = "assets/MoonIcon.svg";
 const themeIcon = document.getElementById("theme-icon");
+const changeThemeIcon = document.getElementById("change-theme-btn");
+
+const changeLightThemeIcon = document.getElementById("changeThemeBtn");
 
 // Swaps the stylesheet to achieve dark mode.
 export function changeTheme() {
@@ -13,7 +18,7 @@ export function changeTheme() {
   setTimeout(() => {
     toast.innerHTML = "Calculator";
   }, 1500);
-  if (theme.getAttribute("href") === lightTheme) {
+  if (theme.getAttribute("href") === lightTheme || theme.getAttribute("href") === anotherTheme ) {
     theme.setAttribute("href", darkTheme);
     themeIcon.setAttribute("src", sunIcon);
     toast.innerHTML = "Dark Mode 🌙";
@@ -64,4 +69,22 @@ export function switchScientific() {
   } catch (error) {
     console.log(error);
   }
+}
+
+const togleLightTheme = document.querySelector(".theme-change-button");
+
+export function switchLightTheme() {
+  try {
+  const theme = document.getElementById("theme");
+  if (theme.getAttribute("href") === lightTheme && togleLightTheme.name == "themeDefaultLight") {
+    theme.setAttribute("href", anotherTheme);
+    changeThemeIcon.setAttribute("name", "themeLightSecond");
+
+  } else if(togleLightTheme.name == "themeLightSecond") {
+    theme.setAttribute("href", lightTheme);
+    changeThemeIcon.setAttribute("name", "themeDefaultLight");
+  }
+} catch (error) {
+  console.log(error);
+}
 }

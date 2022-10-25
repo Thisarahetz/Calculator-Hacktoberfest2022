@@ -142,6 +142,10 @@ input[type="button"]:hover {
   cursor: pointer;
 }
 
+#changeThemeBtn {
+  margin-left: 10px;
+}
+
 .foot {
   text-align: center;
   color: #fff;
@@ -197,4 +201,11 @@ body {
 #scientific-button:hover{
   background-color: rgb(31, 30, 30);
   color: #fff;
+}
+
+.theme-change-button{
+  background-color: #0d0d0e;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }

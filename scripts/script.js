@@ -1,9 +1,12 @@
 import { scientific } from "./calculate.js";
-import { switchScientific, changeTheme } from "./toggles.js";
+import { switchScientific, changeTheme, switchLightTheme } from "./toggles.js";
 
 const res = document.getElementById("result");
 const toggleScientific = document.querySelector(".toggle-scientific");
+const togleLightTheme = document.querySelector(".toggle-theme");
 const themeButton = document.querySelector(".theme-button");
+const themeChageButton = document.querySelector(".theme-change-button");
+
 const hasEventListener= {};
 themeButton.addEventListener("click", () => {
   changeTheme();
@@ -59,6 +62,10 @@ mapButtons();
 toggleScientific.addEventListener("click", () => {
   switchScientific();
   mapButtons();
+});
+
+themeChageButton.addEventListener("click", () => {
+  switchLightTheme();
 });
 
 // Displays entered value on screen.
