@@ -37,14 +37,20 @@
           <button type="button" class="theme-button">
             <img src="assets/SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
           </button>
-          <button name="off" class="toggle-scientific"><span>S</span></button>
+          <!-- <button name="off" class="toggle-scientific"><span>S</span></button> -->
         </div>
       </div>
       <div class="first-row">
         <input type="text" name="result" id="result" value="" placeholder="Result" />
-        <input type="button" value="Del" id="del-button" />
-        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+        <!-- <input type="button" value="Del" id="del-button" />
+        <input type="button" value="C" onclick="result.value=''" id="clear-button" /> -->
 
+      </div>
+      <div class="clear-btn-row">
+        <input value="On" disabled/>
+        <button type ="button" name="off" id="scientific-button" class="toggle-scientific"><span>S</span></button>
+        <input type="button" value="Del" id="del-button" style=" align-items: left;"/>
+        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
       </div>
       <div class="second-row">
         <input type="button" id="btn-1" value="1" />
