@@ -1,0 +1,209 @@
+/* CSS Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans";
+    -webkit-appearance: none;
+  }
+  
+  .wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7DE5ED;
+    transition: 0.8s all;
+  }
+  
+  h1 {
+    margin-bottom: 1.5%;
+    color: rgb(9, 6, 27);
+    font-weight: normal;
+  }
+  
+  .container {
+    /* width: 400px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5DA7DB;
+    padding: 18px;
+    box-shadow: 10px 5px 5px #5837d0b2;
+    border-radius: 8% 8%;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0;
+  } 
+  .top-buttons {
+    display: flex;
+    align-items: center;
+    background-color: #636385;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    border-radius: 15px;
+  }
+  
+  #toast {
+    font-family: "Handlee", cursive;
+    font-weight: 600;
+  }
+  
+  input {
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    cursor: pointer;
+    width: 70px;
+    background-color: #5837D0;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    margin: 0.2em;
+    font-weight: bold;
+  }
+  ::placeholder {
+    color: rgb(2, 1, 1);
+    font-weight: bold;
+  }
+  
+  #result {
+    margin: 10px;
+    background-color: #81C6E8;
+    border-radius: 10px;
+    font-family: "Handlee", cursive;
+    color: #5837D0;
+    font-weight: bold;
+    font-size: 20px;
+  
+  }
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row,
+  .fifth-row,
+  .sixth-row {
+    margin-bottom: 9px;
+  }
+  
+  input[type="button"] {
+    color: rgb(255, 255, 255);
+  }
+  
+  input[type="text"] {
+    background-color: rgb(255, 255, 255);
+    width: 309px;
+  }
+  
+  input[type="button"]:hover {
+    background-color: rgba(37, 35, 59, 0.595);
+    color: #fff;
+  }
+  
+  .first-row {
+    background: #ffffff33;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px #0000001a;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 0 4px 4px 4px;
+    margin-top: 0;
+    border: 0px;
+  }
+  
+  #clear-button {
+    color: #fff;
+    background-color: rgb(231, 32, 32);
+  }
+  
+  #clear-button:hover {
+    color: #fff;
+    background-color: rgba(231, 32, 32, 0.647);
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #github-icon {
+    margin-right: 10px;
+  }
+  
+  .theme-button {
+    all: unset;
+    cursor: pointer;
+  }
+  
+  #changeThemeBtn {
+    margin-left: 10px;
+  }
+  
+  .cp-text
+  { 
+    color: lightgray; 
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  }
+  
+  body{
+    background:  #7DE5ED;
+  }
+  
+  
+  
+  .date-time-div {
+    padding: 1.6rem 3.2rem;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #96f2d7;
+    border: 11px;
+    border-radius: 11px;
+    width: 300px ;
+    border: 2px dotted  black ;
+  }
+  
+  .toggle-scientific{
+    all: unset;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  #scientific-button{
+    color: #fff;
+    background-color: #B1AFFF;
+    margin: 3.2px;
+    padding: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 20px;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    font-weight: bold;
+  }
+  
+  #scientific-button:hover{
+    background-color: rgb(37, 35, 59);
+    color: #fff;
+  }
+  
+  #lastpara{
+    margin-top: -10px ;
+  }
+
+  .theme-change-button{
+    background-color: #636385;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+  

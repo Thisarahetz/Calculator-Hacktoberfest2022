@@ -144,6 +144,10 @@ a {
   cursor: pointer;
 }
 
+#changeThemeBtn {
+  margin-left: 10px;
+}
+
 .cp-text
 { 
   color: lightgray; 
@@ -194,4 +198,11 @@ body{
 
 #lastpara{
   margin-top: -10px ;
+}
+
+.theme-change-button{
+  background-color: #636385;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
