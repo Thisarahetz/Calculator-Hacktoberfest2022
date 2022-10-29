@@ -161,14 +161,12 @@
   
   
   .date-time-div {
+    display: flex;
+    justify-content: space-between;
     padding: 1.6rem 3.2rem;
     text-align: center;
-    margin-top: 50px;
-    background-color: #96f2d7;
-    border: 11px;
-    border-radius: 11px;
-    width: 300px ;
-    border: 2px dotted  black ;
+    background-color:#5DA7DB;
+    color: #fff;
   }
   
   .toggle-scientific{
