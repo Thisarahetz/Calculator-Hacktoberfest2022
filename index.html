@@ -88,9 +88,11 @@
 
   </div>
   <script>
+    setInterval(function(){
     var dt = new Date();
     document.getElementById("date").innerHTML = dt.toLocaleDateString();
     document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+}, 100);
   </script>
   <script type="module" src="./scripts/script.js"></script>
   <script type="module" src="./scripts/calculate.js"></script>
