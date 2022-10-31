@@ -27,6 +27,36 @@
   <div class="header">
       <div class="date-time-div">
         <p>Date : <span id="date"></span></p>
+
+        <div class="animated-text">
+          <h3>
+              <span class="text-slider-items">
+                  W E L C O M E . . ., t o . . ., o n l i n e &nbsp;  C A L C U L A T O R &nbsp; a p p
+              </span>
+              <strong class="text-slider"></strong>
+    
+          </h3>
+      </div>
+      <script src="./typed.js-master/lib/typed.min.js"></script>
+        
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script>
+          if ($(".text-slider").length == 1) {
+                
+              var typed_strings = 
+                  $(".text-slider-items").text();
+    
+              var typed = new Typed(".text-slider", {
+                  strings: typed_strings.split(", "),
+                  typeSpeed: 50,
+                  loop: true,
+                  backDelay: 900,
+                  backSpeed: 30,
+              });
+          }
+      </script>
+
         <p>Time : <span id="time"></span></p>
       </div>
   </div>
