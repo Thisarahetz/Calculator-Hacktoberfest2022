@@ -204,3 +204,15 @@ body{
   padding: 0px;
   border: 0px;
 }
+
+.text-slider-items {
+  display: none;
+}
+  
+.animated-text {
+  text-align: center;
+}
+  
+.animated-text h3 {
+  font-size: 20px;
+}
